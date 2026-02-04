@@ -1,0 +1,44 @@
+name: Compile SCSS to CSS
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "**/*.scss"
+      - ".github/workflows/compile-scss.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-scss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Sass
+        run: npm i -g sass
+
+      # Ajusta estas rutas a TU estructura real:
+      - name: Compile (expanded)
+        run: |
+          sass html/classic/scss/style.scss html/classic/assets/css/style.css --no-source-map
+
+      # Si quieres también compact/horizontal, duplica líneas:
+      # - name: Compile compact
+      #   run: sass html/compact/scss/style.scss html/compact/assets/css/style.css --no-source-map
+
+      - name: Commit compiled CSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: compile scss"
+          git push
