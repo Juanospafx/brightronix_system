@@ -1,0 +1,46 @@
+Please Follow below URL for detail online documentation
+https://jampack.hencework.com/documentation/introduction
+
+Jampack is loaded with many operational, strategical, analytical and collaborative applications.
+
+File Structure
+  HTML
+  ├── 
+  │   └── public
+  │   └── src
+  │     └── assets
+  │     └── css
+  │     └── js
+  │     └──scss
+  │    	  └── apps.scss
+  │    	  └── drawer.scss
+  │    	  └── footer.scss
+  │    	  └── header.scss
+  │       └── horizontal-menu.scss
+  │    	  └── mixins.scss
+  │    	  └── nav.scss
+  │    	  └── navbar-menu.scss
+  │    	  └── style.scss
+  │    	  └── variables.scss
+  │    	  └── vertical-classic-menu.scss
+  │    	  └── vertical-icon-menu.scss
+  │     └── main.js 
+  │   └── All Html Pages
+  │   └── package.json
+  │   └── vite.config.js
+  └── 	
+  
+Installation
+
+To get started, you need to follow some specific steps ( Use of these tools is completely optional.)
+
+     Node.js and NPM. You can download Node.js from here https://nodejs.org. Npm comes bundled with Node.js.
+
+     At last install vite based project using below command line
+
+npm install
+or
+yarn install
+
+If everything was installed correctly, you should see the Vite version of Jampack running in http://localhost:5173/
+Above all procedures are optional you can directly use the compiled Demo files which we provided you.
