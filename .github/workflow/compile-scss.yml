@@ -2,9 +2,9 @@ name: Compile SCSS to CSS
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
-      - "**/*.scss"
+      - "html/**/src/scss/**"
       - ".github/workflows/compile-scss.yml"
   workflow_dispatch:
 
@@ -15,25 +15,26 @@ jobs:
   build-scss:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: Install Sass
         run: npm i -g sass
 
-      # Ajusta estas rutas a TU estructura real:
-      - name: Compile (expanded)
+      - name: Compile classic
         run: |
-          sass html/classic/scss/style.scss html/classic/assets/css/style.css --no-source-map
+          sass html/classic/src/scss/style.scss html/classic/assets/css/style.css --no-source-map --style=compressed
 
-      # Si quieres también compact/horizontal, duplica líneas:
-      # - name: Compile compact
-      #   run: sass html/compact/scss/style.scss html/compact/assets/css/style.css --no-source-map
+      - name: Compile compact
+        run: |
+          sass html/compact/src/scss/style.scss html/compact/assets/css/style.css --no-source-map --style=compressed
+
+      - name: Compile horizontal
+        run: |
+          sass html/horizontal/src/scss/style.scss html/horizontal/assets/css/style.css --no-source-map --style=compressed
 
       - name: Commit compiled CSS
         run: |
