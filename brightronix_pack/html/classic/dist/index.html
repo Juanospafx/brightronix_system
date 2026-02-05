@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<!-- 
+Brightronix
+Author: Hencework
+Contact: contact@hencework.com
+-->
+<html lang="en">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brightronix - Admin CRM Dashboard Template</title>
+	<meta name="description"
+		content="A modern CRM Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap." />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<script>
+		(function () {
+			const storedTheme = localStorage.getItem('theme') || 'light';
+			document.documentElement.setAttribute('data-bs-theme', storedTheme);
+		})();
+	</script>
+
+	<link rel='stylesheet' href='assets/css/style.css'>
+  <script type="module" crossorigin src="/assets/main-DJOcaV6B.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BUFSDVlQ.css">
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div class="hk-wrapper" data-layout="vertical" data-layout-style="default" data-menu="light" data-footer="simple">
+		<!-- Top Navbar -->
+		<nav class="hk-navbar navbar navbar-expand-xl navbar-light fixed-top">
+			<div class="container-fluid">
+				<!-- Start Nav -->
+				<div class="nav-start-wrap">
+					<button
+						class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle d-xl-none"><span
+							class="icon"><span class="feather-icon"><i
+									data-feather="align-left"></i></span></span></button>
+
+					<!-- Search -->
+					<form class="dropdown navbar-search">
+						<div class="dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation
+							data-bs-auto-close="outside">
+							<a href="#"
+								class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover  d-xl-none"><span
+									class="icon"><span class="feather-icon"><i
+											data-feather="search"></i></span></span></a>
+							<div class="input-group d-xl-flex d-none">
+								<span class="input-affix-wrapper input-search affix-border">
+									<input type="text" class="form-control  bg-transparent"
+										data-navbar-search-close="false" placeholder="Search..." aria-label="Search">
+									<span class="input-suffix"><span>/</span>
+										<span class="btn-input-clear"><i class="bi bi-x-circle-fill"></i></span>
+										<span class="spinner-border spinner-border-sm input-loader text-primary"
+											role="status">
+											<span class="sr-only">Loading...</span>
+										</span>
+									</span>
+								</span>
+							</div>
+						</div>
+						<div class="dropdown-menu p-0">
+							<!-- Mobile Search -->
+							<div class="dropdown-item d-xl-none bg-transparent">
+								<div class="input-group mobile-search">
+									<span class="input-affix-wrapper input-search">
+										<input type="text" class="form-control" placeholder="Search..."
+											aria-label="Search">
+										<span class="input-suffix">
+											<span class="btn-input-clear"><i class="bi bi-x-circle-fill"></i></span>
+											<span class="spinner-border spinner-border-sm input-loader text-primary"
+												role="status">
+												<span class="sr-only">Loading...</span>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+							<!--/ Mobile Search -->
+							<div data-simplebar class="dropdown-body p-2">
+								<h6 class="dropdown-header">Recent Search
+								</h6>
+								<div class="dropdown-item bg-transparent">
+									<a href="#" class="badge badge-pill badge-soft-secondary">Grunt</a>
+									<a href="#" class="badge badge-pill badge-soft-secondary">Node JS</a>
+									<a href="#" class="badge badge-pill badge-soft-secondary">SCSS</a>
+								</div>
+								<div class="dropdown-divider"></div>
+								<h6 class="dropdown-header">Help
+								</h6>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+												<span class="initial-wrap">
+													<span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-corner-down-right"
+															width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+														</svg>
+													</span>
+												</span>
+											</div>
+										</div>
+										<div class="media-body">
+											How to setup theme?
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+												<span class="initial-wrap">
+													<span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-corner-down-right"
+															width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+														</svg>
+													</span>
+												</span>
+											</div>
+										</div>
+										<div class="media-body">
+											View detail documentation
+										</div>
+									</div>
+								</a>
+								<div class="dropdown-divider"></div>
+								<h6 class="dropdown-header">Users
+								</h6>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-xs avatar-rounded">
+												<img src="/assets/avatar3-CedfJ5CS.jpg" alt="user" class="avatar-img">
+											</div>
+										</div>
+										<div class="media-body">
+											Sarah Jone
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-xs avatar-soft-primary avatar-rounded">
+												<span class="initial-wrap">J</span>
+											</div>
+										</div>
+										<div class="media-body">
+											Joe Jackson
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-xs avatar-rounded">
+												<img src="/assets/avatar4-BVYPq6rw.jpg" alt="user" class="avatar-img">
+											</div>
+										</div>
+										<div class="media-body">
+											Maria Richard
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="dropdown-footer d-xl-flex d-none"><a href="#"><u>Search all</u></a></div>
+						</div>
+					</form>
+					<!-- /Search -->
+				</div>
+				<!-- /Start Nav -->
+
+				<!-- End Nav -->
+				<div class="nav-end-wrap">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item">
+							<button id="theme-toggle" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover">
+								<span class="icon">
+									<span class=" position-relative">
+										<span id="icon-sun" class="feather-icon d-none">
+											<i data-feather="sun"></i>
+										</span>
+										<span id="icon-moon" class="feather-icon">
+											<i data-feather="moon"></i>
+										</span>
+									</span>
+								</span>
+							</button>
+						</li>
+						<li class="nav-item">
+							<a href="email.html" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover"><span
+									class="icon"><span class=" position-relative"><span class="feather-icon"><i
+												data-feather="inbox"></i></span><span
+											class="badge badge-sm badge-soft-primary badge-sm badge-pill position-top-end-overflow-1">4</span></span></span></a>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown dropdown-notifications">
+								<a href="#"
+									class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+									data-bs-toggle="dropdown" data-dropdown-animation role="button" aria-haspopup="true"
+									aria-expanded="false"><span class="icon"><span class="position-relative"><span
+												class="feather-icon"><i data-feather="bell"></i></span><span
+												class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span></span></a>
+								<div class="dropdown-menu dropdown-menu-end p-0">
+									<h6 class="dropdown-header px-4 fs-6">Notifications<a href="#"
+											class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span
+												class="icon"><span class="feather-icon"><i
+														data-feather="settings"></i></span></span></a>
+									</h6>
+									<div data-simplebar class="dropdown-body  p-2">
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div class="avatar avatar-rounded avatar-sm">
+														<img src="/assets/avatar2-DNgzPhPs.jpg" alt="user"
+															class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Morgan Freeman accepted your
+															invitation to join the team</div>
+														<div class="notifications-info">
+															<span class="badge badge-soft-success">Collaboration</span>
+															<div class="notifications-time">Today, 10:14 PM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div
+														class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
+														<span class="initial-wrap">
+															<span class="feather-icon"><i
+																	data-feather="inbox"></i></span>
+														</span>
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">New message received from Alan
+															Rickman</div>
+														<div class="notifications-info">
+															<div class="notifications-time">Today, 7:51 AM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div
+														class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
+														<span class="initial-wrap">
+															<span class="feather-icon"><i
+																	data-feather="clock"></i></span>
+														</span>
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">You have a follow up with
+															Brightronix Head on Friday, Dec 19 at 9:30 am</div>
+														<div class="notifications-info">
+															<div class="notifications-time">Yesterday, 9:25 PM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div class="avatar avatar-sm avatar-rounded">
+														<img src="/assets/avatar3-CedfJ5CS.jpg" alt="user"
+															class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Application of Sarah Williams is
+															waiting for your approval</div>
+														<div class="notifications-info">
+															<div class="notifications-time">Today 10:14 PM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div class="avatar avatar-sm avatar-rounded">
+														<img src="/assets/avatar10-BP8Yl5NQ.jpg" alt="user"
+															class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Winston Churchil shared a
+															document with you</div>
+														<div class="notifications-info">
+															<span class="badge badge-soft-violet">File Manager</span>
+															<div class="notifications-time">2 Oct, 2021</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div
+														class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
+														<span class="initial-wrap">
+															<span class="feather-icon"><i
+																	data-feather="calendar"></i></span>
+														</span>
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Last 2 days left for the project
+															to be completed</div>
+														<div class="notifications-info">
+															<span class="badge badge-soft-orange">Updates</span>
+															<div class="notifications-time">14 Sep, 2021</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-footer"><a href="#"><u>View all notifications</u></a></div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown ps-2">
+								<a class=" dropdown-toggle no-caret" href="#" role="button" data-bs-display="static"
+									data-bs-toggle="dropdown" data-dropdown-animation data-bs-auto-close="outside"
+									aria-expanded="false">
+									<div class="avatar avatar-rounded avatar-xs">
+										<img src="/assets/avatar12-Bc1-QUW6.jpg" alt="user" class="avatar-img">
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<div class="p-2">
+										<div class="media">
+											<div class="media-head me-2">
+												<div class="avatar avatar-primary avatar-sm avatar-rounded">
+													<span class="initial-wrap">Hk</span>
+												</div>
+											</div>
+											<div class="media-body">
+												<div class="dropdown">
+													<a href="#" class="d-block dropdown-toggle link-dark fw-medium"
+														data-bs-toggle="dropdown" data-dropdown-animation
+														data-bs-auto-close="inside">Hencework</a>
+													<div class="dropdown-menu dropdown-menu-end">
+														<div class="p-2">
+															<div class="media align-items-center active-user mb-3">
+																<div class="media-head me-2">
+																	<div
+																		class="avatar avatar-primary avatar-xs avatar-rounded">
+																		<span class="initial-wrap">Hk</span>
+																	</div>
+																</div>
+																<div class="media-body">
+																	<a href="#"
+																		class="d-flex align-items-center link-dark">Hencework
+																		<i
+																			class="ri-checkbox-circle-fill fs-7 text-primary ms-1"></i></a>
+																	<a href="#"
+																		class="d-block fs-8 link-secondary"><u>Manage
+																			your account</u></a>
+																</div>
+															</div>
+															<div class="media align-items-center mb-3">
+																<div class="media-head me-2">
+																	<div class="avatar avatar-xs avatar-rounded">
+																		<img src="/assets/avatar12-Bc1-QUW6.jpg"
+																			alt="user" class="avatar-img">
+																	</div>
+																</div>
+																<div class="media-body">
+																	<a href="#" class="d-block link-dark">Brightronix
+																		Team</a>
+																	<a href="#"
+																		class="d-block fs-8 link-secondary">contact@hencework.com</a>
+																</div>
+															</div>
+															<button class="btn btn-block btn-outline-light btn-sm">
+																<span><span class="icon"><span class="feather-icon"><i
+																				data-feather="plus"></i></span></span>
+																	<span>Add Account</span></span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="fs-7">contact@hencework.com</div>
+												<a href="#" class="d-block fs-8 link-secondary"><u>Sign Out</u></a>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="profile.html">Profile</a>
+									<a class="dropdown-item" href="#"><span class="me-2">Offers</span><span
+											class="badge badge-sm badge-soft-pink">2</span></a>
+									<div class="dropdown-divider"></div>
+									<h6 class="dropdown-header">Manage Account</h6>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="credit-card"></i></span><span>Payment methods</span></a>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="check-square"></i></span><span>Subscriptions</span></a>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="settings"></i></span><span>Settings</span></a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="tag"></i></span><span>Raise a ticket</span></a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Terms & Conditions</a>
+									<a class="dropdown-item" href="#">Help & Support</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /End Nav -->
+			</div>
+		</nav>
+		<!-- /Top Navbar -->
+
+		<!-- Vertical Nav -->
+		<div class="hk-menu">
+			<!-- Brand -->
+			<div class="menu-header">
+				<span>
+					<a class="navbar-brand" href="index.html">
+						<img class="brand-img img-fluid" src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16%2032C7.16344%2032%20-1.08564e-06%2024.8366%20-6.99382e-07%2016C-3.13124e-07%207.16344%207.16344%20-1.08564e-06%2016%20-6.99382e-07C24.8366%20-3.13124e-07%2032%207.16344%2032%2016C32%2024.8366%2024.8366%2032%2016%2032ZM16%207.6375C11.3815%207.6375%207.6375%2011.3815%207.6375%2016C7.6375%2020.6185%2011.3815%2024.3625%2016%2024.3625C20.6185%2024.3625%2024.3625%2020.6185%2024.3625%2016C24.3625%2011.3815%2020.6185%207.6375%2016%207.6375Z'%20fill='url(%23paint0_linear_504_22)'/%3e%3cpath%20d='M16%201.90798e-07C18.5445%202.21141e-07%2021.0524%200.60688%2023.3154%201.77027C25.5784%202.93366%2027.5313%204.62001%2029.012%206.68935C30.4927%208.75869%2031.4585%2011.1513%2031.8292%2013.6687C32.2%2016.1861%2031.965%2018.7556%2031.1438%2021.164C30.3225%2023.5723%2028.9387%2025.7501%2027.1072%2027.5165C25.2757%2029.2829%2023.0493%2030.5871%2020.6128%2031.3206C18.1763%2032.0542%2015.6%2032.1961%2013.0977%2031.7346C10.5953%2031.273%208.23919%2030.2213%206.22476%2028.6667L10.8961%2022.6136C11.9479%2023.4253%2013.1781%2023.9744%2014.4846%2024.2154C15.7911%2024.4564%2017.1363%2024.3823%2018.4085%2023.9993C19.6806%2023.6163%2020.8431%2022.9354%2021.7994%2022.0131C22.7556%2021.0908%2023.4782%2019.9537%2023.9069%2018.6962C24.3357%2017.4388%2024.4584%2016.0972%2024.2649%2014.7828C24.0713%2013.4684%2023.567%2012.2191%2022.7939%2011.1387C22.0208%2010.0582%2021.0011%209.17773%2019.8195%208.57029C18.638%207.96286%2017.3286%207.64599%2016%207.64599L16%201.90798e-07Z'%20fill='url(%23paint1_linear_504_22)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_504_22'%20x1='32'%20y1='16'%20x2='-6.99382e-07'%20y2='16'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23D0F8EE'/%3e%3cstop%20offset='1'%20stop-color='%2325CBA1'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_504_22'%20x1='8.63878'%20y1='34.8593'%20x2='28.1673'%20y2='1.76426'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%2349D4B1'/%3e%3cstop%20offset='0.779417'%20stop-color='%2315715A'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="brand" />
+						<img id="logo-dark" class="brand-img img-fluid d-none ms-3"
+							src="/src/assets/img/Brightronix-dark.svg" alt="brand" />
+						<img id="logo-light" class="brand-img img-fluid" src="/src/assets/img/Brightronix.svg"
+							alt="brand" />
+					</a>
+					<button class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle">
+						<span class="icon">
+							<span class="svg-icon fs-5">
+								<svg xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-arrow-bar-to-left" width="24" height="24"
+									viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+									stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<line x1="10" y1="12" x2="20" y2="12"></line>
+									<line x1="10" y1="12" x2="14" y2="16"></line>
+									<line x1="10" y1="12" x2="14" y2="8"></line>
+									<line x1="4" y1="4" x2="4" y2="20"></line>
+								</svg>
+							</span>
+						</span>
+					</button>
+				</span>
+			</div>
+			<!-- /Brand -->
+
+			<!-- Main Menu -->
+			<div data-simplebar class="nicescroll-bar">
+				<div class="menu-content-wrap">
+					<div class="menu-group">
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-template" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<rect x="4" y="4" width="16" height="4" rx="1" />
+												<rect x="4" y="12" width="6" height="8" rx="1" />
+												<line x1="14" y1="12" x2="20" y2="12" />
+												<line x1="14" y1="16" x2="20" y2="16" />
+												<line x1="14" y1="20" x2="20" y2="20" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Dashboard</span>
+									<span class="badge badge-sm badge-soft-pink ms-auto">Hot</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-gap"></div>
+					<div class="menu-group">
+						<div class="nav-header">
+							<span>Apps</span>
+						</div>
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_chat">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-message-dots" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path
+													d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+												<line x1="12" y1="11" x2="12" y2="11.01" />
+												<line x1="8" y1="11" x2="8" y2="11.01" />
+												<line x1="16" y1="11" x2="16" y2="11.01" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Chat</span>
+								</a>
+								<ul id="dash_chat" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="chats.html"><span
+														class="nav-link-text">Chats</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chats-group.html"><span
+														class="nav-link-text">Groups</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chats-contact.html"><span
+														class="nav-link-text">Contacts</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_chatpop">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-message-circle-2" width="24"
+												height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+												fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+												<line x1="12" y1="12" x2="12" y2="12.01" />
+												<line x1="8" y1="12" x2="8" y2="12.01" />
+												<line x1="16" y1="12" x2="16" y2="12.01" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Chat Popup</span>
+
+								</a>
+								<ul id="dash_chatpop" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="chatpopup.html"><span
+														class="nav-link-text">Direct Message</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chatbot.html"><span
+														class="nav-link-text">Chatbot</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="calendar.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-calendar-time" width="24"
+												height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+												fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path
+													d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+												<circle cx="18" cy="18" r="4" />
+												<path d="M15 3v4" />
+												<path d="M7 3v4" />
+												<path d="M3 11h16" />
+												<path d="M18 16.496v1.504l1 1" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Calendar</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="email.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-inbox" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<rect x="4" y="4" width="16" height="16" rx="2" />
+												<path d="M4 13h3l3 3h4l3 -3h3" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Email</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_scrumboard">
+									<span class="nav-icon-wrap position-relative">
+										<span
+											class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span>
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-layout-kanban" width="24"
+												height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+												fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<line x1="4" y1="4" x2="10" y2="4" />
+												<line x1="14" y1="4" x2="20" y2="4" />
+												<rect x="4" y="8" width="6" height="12" rx="2" />
+												<rect x="14" y="8" width="6" height="6" rx="2" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Scrumboard</span>
+								</a>
+								<ul id="dash_scrumboard" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="projects-board.html"><span
+														class="nav-link-text">All Boards</span></a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link" href="kanban-board.html"><span
+														class="nav-link-text">Project Kanban</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="pipeline.html"><span
+														class="nav-link-text">Pipeline Kanban</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_contact">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-notebook" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path
+													d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+												<line x1="13" y1="8" x2="15" y2="8" />
+												<line x1="13" y1="12" x2="15" y2="12" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Contact</span>
+								</a>
+								<ul id="dash_contact" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="contact.html"><span
+														class="nav-link-text">Contact List</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="contact-cards.html"><span
+														class="nav-link-text">Contact Cards</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="edit-contact.html"><span
+														class="nav-link-text">Edit Contact</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_file">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-file-check" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+												<path
+													d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+												<path d="M9 15l2 2l4 -4" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">File Manager</span>
+								</a>
+								<ul id="dash_file" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="file-manager-list.html"><span
+														class="nav-link-text">List View</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="file-manager-grid.html"><span
+														class="nav-link-text">Grid View</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="gallery.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-photo" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<line x1="15" y1="8" x2="15.01" y2="8" />
+												<rect x="4" y="4" width="16" height="16" rx="3" />
+												<path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+												<path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Gallery</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_task">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-list-details" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path d="M13 5h8" />
+												<path d="M13 9h5" />
+												<path d="M13 15h8" />
+												<path d="M13 19h5" />
+												<rect x="3" y="4" width="6" height="6" rx="1" />
+												<rect x="3" y="14" width="6" height="6" rx="1" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Todo</span>
+									<span class="badge badge-soft-success ms-2">2</span>
+								</a>
+								<ul id="dash_task" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="tasklist.html"><span
+														class="nav-link-text">Tasklist</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="gantt.html"><span
+														class="nav-link-text">Gantt</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_blog">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-browser" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<rect x="4" y="4" width="16" height="16" rx="1" />
+												<line x1="4" y1="8" x2="20" y2="8" />
+												<line x1="8" y1="4" x2="8" y2="8" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Blog</span>
+								</a>
+								<ul id="dash_blog" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="posts.html"><span
+														class="nav-link-text">Posts</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="add-new-post.html"><span
+														class="nav-link-text">Add New Post</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="post-detail.html"><span
+														class="nav-link-text">Post Detail</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_invoice">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-file-digit" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+												<rect x="9" y="12" width="3" height="5" rx="1" />
+												<path
+													d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+												<path d="M15 12v5" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Invoices</span>
+								</a>
+								<ul id="dash_invoice" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="invoice-list.html"><span
+														class="nav-link-text">Invoice List</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="invoice-templates.html"><span
+														class="nav-link-text">Invoice Templates</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="create-invoice.html"><span
+														class="nav-link-text">Create Invoice</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="invoice-preview.html"><span
+														class="nav-link-text">Invoice Preview</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_integ">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-code" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<polyline points="7 8 3 12 7 16" />
+												<polyline points="17 8 21 12 17 16" />
+												<line x1="14" y1="4" x2="10" y2="20" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Integrations</span>
+								</a>
+								<ul id="dash_integ" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="all-apps.html"><span class="nav-link-text">All
+														Apps</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="integrations-detail.html"><span
+														class="nav-link-text">App Detail</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="integrations.html"><span
+														class="nav-link-text">Integrations</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-gap"></div>
+					<div class="menu-group">
+						<div class="nav-header">
+							<span>Pages</span>
+						</div>
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_pages">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-user-plus" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<circle cx="9" cy="7" r="4" />
+												<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+												<path d="M16 11h6m-3 -3v6" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Authentication</span>
+								</a>
+								<ul id="dash_pages" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+													data-bs-target="#dash_log">
+													<span class="nav-link-text">Log In</span>
+												</a>
+												<ul id="dash_log" class="nav flex-column collapse  nav-children">
+													<li class="nav-item">
+														<ul class="nav flex-column">
+															<li class="nav-item">
+																<a class="nav-link" href="login.html"><span
+																		class="nav-link-text">Login</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="login-simple.html"><span
+																		class="nav-link-text">Login Simple</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="login-classic.html"><span
+																		class="nav-link-text">Login Classic</span></a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+													data-bs-target="#dash_sign">
+													<span class="nav-link-text">Sign Up</span>
+												</a>
+												<ul id="dash_sign" class="nav flex-column collapse  nav-children">
+													<li class="nav-item">
+														<ul class="nav flex-column">
+															<li class="nav-item">
+																<a class="nav-link" href="signup.html"><span
+																		class="nav-link-text">Signup</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="signup-simple.html"><span
+																		class="nav-link-text">Signup Simple</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="signup-classic.html"><span
+																		class="nav-link-text">Signup Classic</span></a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="lock-screen.html"><span
+														class="nav-link-text">Lock Screen</span></a>
+											</li>
+
+											<li class="nav-item">
+												<a class="nav-link" href="reset-password.html"><span
+														class="nav-link-text">Reset Password</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="404.html"><span class="nav-link-text">Error
+														404</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="503.html"><span class="nav-link-text">Error
+														503</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse"
+									data-bs-target="#dash_profile">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-user-search" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<circle cx="12" cy="7" r="4" />
+												<path d="M6 21v-2a4 4 0 0 1 4 -4h1" />
+												<circle cx="16.5" cy="17.5" r="2.5" />
+												<path d="M18.5 19.5l2.5 2.5" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text position-relative">Profile
+										<span
+											class="badge badge-danger badge-indicator position-absolute top-0 start-100"></span>
+									</span>
+								</a>
+								<ul id="dash_profile" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="profile.html">
+													<span class="nav-link-text">Profile</span>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="edit-profile.html">
+													<span class="nav-link-text">Edit Profile</span>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="account.html">
+													<span class="nav-link-text">Account</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-gap"></div>
+					<div class="menu-group">
+						<div class="nav-header">
+							<span>Documentation</span>
+						</div>
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="https://Brightronix.hencework.com/documentation/introduction">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-file-code-2" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<path d="M10 12h-1v5h1" />
+												<path d="M14 12h1v5h-1" />
+												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+												<path
+													d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Documentation</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://Brightronix.hencework.com/documentation/avatar">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg"
+												class="icon icon-tabler icon-tabler-layout" width="24" height="24"
+												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+												stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+												<rect x="4" y="4" width="6" height="5" rx="2" />
+												<rect x="4" y="13" width="6" height="7" rx="2" />
+												<rect x="14" y="4" width="6" height="16" rx="2" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Components</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="callout card card-flush bg-orange-light-5 text-center mt-5 w-220p mx-auto">
+						<div class="card-body">
+							<h5 class="h5">Quickly Build Applications</h5>
+							<p class="p-sm card-text">Exclusively for webapps Based on Bootstrap</p>
+							<a href="https://Brightronix.hencework.com/documentation/introduction"
+								class="btn btn-primary btn-block">Go Brightronix Doc</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Main Menu -->
+		</div>
+		<div id="hk_menu_backdrop" class="hk-menu-backdrop"></div>
+		<!-- /Vertical Nav -->
+
+		<!-- Chat Popup -->
+		<div class="hk-chatbot-popup">
+			<header>
+				<div class="chatbot-head-top">
+					<a class="btn btn-sm btn-icon btn-dark btn-rounded" href="javascript:void(0);"
+						data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="icon"><span class="feather-icon"><i
+									data-feather="more-horizontal"></i></span></span>
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#"><i
+								class="dropdown-icon zmdi zmdi-notifications-active"></i><span>Send push
+								notifications</span></a>
+						<a class="dropdown-item" href="#"><i class="dropdown-icon zmdi zmdi-volume-off"></i><span>Mute
+								Chat</span></a>
+					</div>
+					<span class="text-white">Chat with Us</span>
+					<a id="minimize_chatbot" href="javascript:void(0);"
+						class="btn btn-sm btn-icon btn-dark btn-rounded">
+						<span class="icon"><span class="feather-icon"><i data-feather="minus"></i></span></span>
+					</a>
+				</div>
+				<div class="separator-full separator-light mt-0 opacity-10"></div>
+				<div class="media-wrap">
+					<div class="media">
+						<div class="media-head">
+							<div
+								class="avatar avatar-sm avatar-soft-primary avatar-icon avatar-rounded position-relative">
+								<span class="initial-wrap">
+									<i class="ri-customer-service-2-line"></i>
+								</span>
+								<span
+									class="badge badge-success badge-indicator badge-indicator-lg badge-indicator-nobdr position-bottom-end-overflow-1"></span>
+							</div>
+						</div>
+						<div class="media-body">
+							<div class="user-name">Chat Robot</div>
+							<div class="user-status">Online</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="chatbot-popup-body">
+				<div data-simplebar class="nicescroll-bar">
+					<div>
+						<div class="init-content-wrap">
+							<div class="card card-shadow">
+								<div class="card-body">
+									<p class="card-text">Hey I am chat robot 😈<br>Do yo have any question regarding our
+										tools?<br><br>Select the topic or start chatting.</p>
+									<button class="btn btn-block btn-primary text-nonecase start-conversation">Start a
+										conversation</button>
+								</div>
+							</div>
+							<div class="btn-wrap">
+								<button class="btn btn-soft-primary text-nonecase btn-rounded start-conversation"><span><span
+											class="icon"><span class="feather-icon"><i
+													data-feather="eye"></i></span></span><span class="btn-text">Just
+											browsing</span></span></button>
+								<button class="btn btn-soft-danger text-nonecase btn-rounded start-conversation"><span><span
+											class="icon"><span class="feather-icon"><i
+													data-feather="credit-card"></i></span></span><span
+											class="btn-text">I have a question regarding pricing</span></span></button>
+								<button class="btn btn-soft-warning text-nonecase btn-rounded start-conversation"><span><span
+											class="icon"><span class="feather-icon"><i
+													data-feather="cpu"></i></span></span><span class="btn-text">Need
+											help for technical query</span></span></button>
+								<button class="btn btn-soft-success text-nonecase btn-rounded start-conversation"><span><span
+											class="icon"><span class="feather-icon"><i
+													data-feather="zap"></i></span></span><span class="btn-text">I have a
+											pre purchase question</span></span></button>
+							</div>
+						</div>
+						<ul class="list-unstyled d-none">
+							<li class="media sent">
+								<div class="media-body">
+									<div class="msg-box">
+										<div>
+											<p>I have a plan regarding pricing</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="media received">
+								<div class="avatar avatar-xs avatar-soft-primary avatar-icon avatar-rounded">
+									<span class="initial-wrap">
+										<i class="ri-customer-service-2-line"></i>
+									</span>
+								</div>
+								<div class="media-body">
+									<div class="msg-box">
+										<div>
+											<p>Welcome back!<br>Are you looking to upgrade your existing plan?</p>
+										</div>
+									</div>
+									<div class="msg-box typing-wrap">
+										<div>
+											<div class="typing">
+												<div class="dot"></div>
+												<div class="dot"></div>
+												<div class="dot"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="chatbot-intro-text fs-7">
+					<div class="separator-full separator-light"></div>
+					<p class="mb-2">This is Brightronix's beta version please sign up now to get early access to our full
+						version</p>
+					<a class="d-block mb-2" href="#"><u>Give Feedback</u></a>
+				</div>
+				<div class="input-group d-none">
+					<div class="input-group-text overflow-show border-0">
+						<button
+							class="btn btn-icon btn-flush-dark flush-soft-hover btn-rounded dropdown-toggle no-caret"
+							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="icon"><span class="feather-icon"><i data-feather="share"></i></span></span>
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">
+								<div class="d-flex align-items-center">
+									<div class="avatar avatar-icon avatar-xs avatar-soft-primary avatar-rounded me-3">
+										<span class="initial-wrap">
+											<i class="ri-image-line"></i>
+										</span>
+									</div>
+									<div>
+										<span class="h6 mb-0">Photo or Video Library</span>
+									</div>
+								</div>
+							</a>
+							<a class="dropdown-item" href="#">
+								<div class="d-flex align-items-center">
+									<div class="avatar avatar-icon avatar-xs avatar-soft-info avatar-rounded me-3">
+										<span class="initial-wrap">
+											<i class="ri-file-4-line"></i>
+										</span>
+									</div>
+									<div>
+										<span class="h6 mb-0">Documents</span>
+									</div>
+								</div>
+							</a>
+							<a class="dropdown-item" href="#">
+								<div class="d-flex align-items-center">
+									<div class="avatar avatar-icon avatar-xs avatar-soft-success avatar-rounded me-3">
+										<span class="initial-wrap">
+											<i class="ri-map-pin-line"></i>
+										</span>
+									</div>
+									<div>
+										<span class="h6 mb-0">Location</span>
+									</div>
+								</div>
+							</a>
+							<a class="dropdown-item" href="#">
+								<div class="d-flex align-items-center">
+									<div class="avatar avatar-icon avatar-xs avatar-soft-blue avatar-rounded me-3">
+										<span class="initial-wrap">
+											<i class="ri-contacts-line"></i>
+										</span>
+									</div>
+									<div>
+										<span class="h6 mb-0">Contact</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<input type="text" id="input_msg_chat_popup" name="send-msg"
+						class="input-msg-send form-control border-0 shadow-none" placeholder="Type something...">
+					<div class="input-group-text overflow-show border-0">
+						<button class="btn btn-icon btn-flush-dark flush-soft-hover btn-rounded">
+							<span class="icon"><span class="feather-icon"><i data-feather="smile"></i></span></span>
+						</button>
+					</div>
+				</div>
+				<div class="footer-copy-text">Powered by <a class="brand-link" href="#"><img
+							src="dist/img/logo-light.png" alt="logo-brand"></a></div>
+			</footer>
+		</div>
+		<a href="#" class="btn btn-icon btn-floating btn-primary btn-lg btn-rounded btn-popup-open">
+			<span class="icon">
+				<span class="feather-icon"><i data-feather="message-circle"></i></span>
+			</span>
+		</a>
+		<div class="chat-popover shadow-xl">
+			<p>Try Brightronix Chat for free and connect with your customers now!</p>
+		</div>
+		<!-- /Chat Popup -->
+
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper">
+			<div class="container-xxl">
+				<!-- Page Header -->
+				<div class="hk-pg-header pg-header-wth-tab pt-7">
+					<div class="d-flex">
+						<div class="d-flex flex-wrap justify-content-between flex-1">
+							<div class="mb-lg-0 mb-2 me-8">
+								<h1 class="pg-title">Welcome back</h1>
+								<p>Create pages using a variety of features that leverage Brightronix components</p>
+							</div>
+							<div class="pg-header-action-wrap">
+								<div class="input-group w-300p">
+									<span class="input-affix-wrapper">
+										<span class="input-prefix"><span class="feather-icon"><i
+													data-feather="calendar"></i></span></span>
+										<input class="form-control form-wth-icon" name="datetimes"
+											value="Aug 18,2020 - Aug 19, 2020">
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="nav nav-line nav-light nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" data-bs-toggle="tab" href="#">
+								<span class="nav-link-text">Overview</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#">
+								<span class="nav-link-text">Analytics</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#">
+								<span class="nav-link-text">Operations</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Page Header -->
+
+				<!-- Page Body -->
+				<div class="hk-pg-body">
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab_block_1">
+							<div class="row">
+								<div class="col-xxl-9 col-lg-8 col-md-7 mb-md-4 mb-3">
+									<div class="card card-border mb-0 h-100">
+										<div class="card-header card-header-action">
+											<h6>Audience Overview</h6>
+											<div class="card-action-wrap">
+												<div class="btn-group d-lg-flex d-none" role="group"
+													aria-label="Basic outlined example">
+													<button type="button"
+														class="btn btn-outline-light active">All</button>
+													<button type="button"
+														class="btn btn-outline-light">Sessions</button>
+													<button type="button" class="btn btn-outline-light">Source</button>
+													<button type="button"
+														class="btn btn-outline-light">Referrals</button>
+												</div>
+												<select class="form-select d-lg-none d-flex">
+													<option selected="" value="1">All</option>
+													<option value="2">Sessions</option>
+													<option value="3">Source</option>
+													<option value="4">Referrals</option>
+												</select>
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="text-center">
+												<div class="d-inline-block">
+													<span class="badge-status">
+														<span
+															class="badge bg-primary badge-indicator badge-indicator-nobdr"></span>
+														<span class="badge-label">Direct</span>
+													</span>
+												</div>
+												<div class="d-inline-block ms-3">
+													<span class="badge-status">
+														<span
+															class="badge bg-primary-light-2 badge-indicator badge-indicator-nobdr"></span>
+														<span class="badge-label">Organic search</span>
+													</span>
+												</div>
+												<div class="d-inline-block ms-3">
+													<span class="badge-status">
+														<span
+															class="badge bg-primary-light-4 badge-indicator badge-indicator-nobdr"></span>
+														<span class="badge-label">Referral</span>
+													</span>
+												</div>
+											</div>
+											<div id="column_chart_2"></div>
+											<div class="separator-full mt-5"></div>
+											<div class="flex-grow-1 ms-lg-3">
+												<div class="row">
+													<div class="col-xxl-3 col-sm-6 mb-xxl-0 mb-3">
+														<span class="d-block fw-medium fs-7">Users</span>
+														<div class="d-flex align-items-center">
+															<span
+																class="d-block fs-4 fw-medium text-dark mb-0">8.8k</span>
+															<span class="badge badge-sm badge-soft-success ms-1">
+																<i class="bi bi-arrow-up"></i> 7.5%
+															</span>
+														</div>
+													</div>
+													<div class="col-xxl-3 col-sm-6 mb-xxl-0 mb-3">
+														<span class="d-block fw-medium fs-7">Sessions</span>
+														<div class="d-flex align-items-center">
+															<span
+																class="d-block fs-4 fw-medium text-dark mb-0">18.2k</span>
+															<span class="badge badge-sm badge-soft-success ms-1">
+																<i class="bi bi-arrow-up"></i> 7.2%
+															</span>
+														</div>
+													</div>
+													<div class="col-xxl-3 col-sm-6 mb-xxl-0 mb-3">
+														<span class="d-block fw-medium fs-7">Bounce rate</span>
+														<div class="d-flex align-items-center">
+															<span
+																class="d-block fs-4 fw-medium text-dark mb-0">46.2%</span>
+															<span class="badge badge-sm badge-soft-danger ms-1">
+																<i class="bi bi-arrow-down"></i> 0.2%
+															</span>
+														</div>
+													</div>
+													<div class="col-xxl-3 col-sm-6">
+														<span class="d-block fw-medium fs-7">Session duration</span>
+														<div class="d-flex align-items-center">
+															<span class="d-block fs-4 fw-medium text-dark mb-0">4m
+																24s</span>
+															<span class="badge badge-sm badge-soft-success ms-1">
+																<i class="bi bi-arrow-up"></i> 10.8%
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xxl-3 col-lg-4 col-md-5 mb-md-4 mb-3">
+									<div class="card card-border mb-0  h-100">
+										<div class="card-header card-header-action">
+											<h6>Returning Customers</h6>
+											<div class="card-action-wrap">
+												<a class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+													href="#" data-bs-toggle="dropdown"><span class="icon"><span
+															class="feather-icon"><i
+																data-feather="more-vertical"></i></span></span></a>
+												<div class="dropdown-menu dropdown-menu-end">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Separated link</a>
+												</div>
+											</div>
+										</div>
+										<div class="card-body text-center">
+											<div id="radial_chart_2"></div>
+											<div class="d-inline-block mt-4">
+												<div class="mb-4">
+													<span class="d-block badge-status lh-1">
+														<span
+															class="badge bg-primary badge-indicator badge-indicator-nobdr d-inline-block"></span>
+														<span class="badge-label d-inline-block">Organic</span>
+													</span>
+													<span
+														class="d-block text-dark fs-5 fw-medium mb-0 mt-1">$243.50</span>
+												</div>
+												<div>
+													<span class="badge-status lh-1">
+														<span
+															class="badge bg-primary-light-2 badge-indicator badge-indicator-nobdr"></span>
+														<span class="badge-label">Marketing</span>
+													</span>
+													<span
+														class="d-block text-dark fs-5 fw-medium mb-0 mt-1">$1469</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 mb-md-4 mb-3">
+									<div class="card card-border mb-0 h-100">
+										<div class="card-header card-header-action">
+											<h6>Active users</h6>
+											<div class="card-action-wrap">
+												<button type="button" class="btn btn-outline-light">Real time
+													chart</button>
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="row">
+												<div class="col-md-8">
+													<div id="anim_map_2" class="h-300p"></div>
+												</div>
+												<div class="col-md-4">
+													<div class="media align-items-center mb-3">
+														<div class="media-head me-3">
+															<div class="avatar avatar-xxs avatar-rounded">
+																<img src="/assets/us-Du7-EsbT.svg" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div class="progress-lb-wrap">
+																<label class="progress-label mb-0">United States</label>
+																<div class="d-flex align-items-center">
+																	<div
+																		class="progress progress-bar-rounded progress-bar-xs flex-1">
+																		<div class="progress-bar bg-blue-dark-3 w-80"
+																			role="progressbar" aria-valuenow="80"
+																			aria-valuemin="0" aria-valuemax="100"></div>
+																	</div>
+																	<div class="fs-8 mnw-30p ms-3">80%</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="media align-items-center mb-3">
+														<div class="media-head me-3">
+															<div class="avatar avatar-xxs avatar-rounded">
+																<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icon-css-in'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23f93'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='%23fff'%20d='M0%20160h640v160H0z'/%3e%3cpath%20fill='%23128807'%20d='M0%20320h640v160H0z'/%3e%3cg%20transform='matrix(3.2%200%200%203.2%20320%20240)'%3e%3ccircle%20r='20'%20fill='%23008'/%3e%3ccircle%20r='17.5'%20fill='%23fff'/%3e%3ccircle%20r='3.5'%20fill='%23008'/%3e%3cg%20id='d'%3e%3cg%20id='c'%3e%3cg%20id='b'%3e%3cg%20id='a'%20fill='%23008'%3e%3ccircle%20r='.9'%20transform='rotate(7.5%20-8.8%20133.5)'/%3e%3cpath%20d='M0%2017.5L.6%207%200%202l-.6%205L0%2017.5z'/%3e%3c/g%3e%3cuse%20width='100%25'%20height='100%25'%20transform='rotate(15)'%20xlink:href='%23a'/%3e%3c/g%3e%3cuse%20width='100%25'%20height='100%25'%20transform='rotate(30)'%20xlink:href='%23b'/%3e%3c/g%3e%3cuse%20width='100%25'%20height='100%25'%20transform='rotate(60)'%20xlink:href='%23c'/%3e%3c/g%3e%3cuse%20width='100%25'%20height='100%25'%20transform='rotate(120)'%20xlink:href='%23d'/%3e%3cuse%20width='100%25'%20height='100%25'%20transform='rotate(-120)'%20xlink:href='%23d'/%3e%3c/g%3e%3c/svg%3e" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div class="progress-lb-wrap">
+																<label class="progress-label mb-0">India</label>
+																<div class="d-flex align-items-center">
+																	<div
+																		class="progress progress-bar-rounded progress-bar-xs flex-1">
+																		<div class="progress-bar bg-blue w-50"
+																			role="progressbar" aria-valuenow="50"
+																			aria-valuemin="0" aria-valuemax="100"></div>
+																	</div>
+																	<div class="fs-8 mnw-30p ms-3">50%</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="media align-items-center mb-3">
+														<div class="media-head me-3">
+															<div class="avatar avatar-xxs avatar-rounded">
+																<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icon-css-gb'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23012169'%20d='M0%200h640v480H0z'/%3e%3cpath%20fill='%23FFF'%20d='M75%200l244%20181L562%200h78v62L400%20241l240%20178v61h-80L320%20301%2081%20480H0v-60l239-178L0%2064V0h75z'/%3e%3cpath%20fill='%23C8102E'%20d='M424%20281l216%20159v40L369%20281h55zm-184%2020l6%2035L54%20480H0l240-179zM640%200v3L391%20191l2-44L590%200h50zM0%200l239%20176h-60L0%2042V0z'/%3e%3cpath%20fill='%23FFF'%20d='M241%200v480h160V0H241zM0%20160v160h640V160H0z'/%3e%3cpath%20fill='%23C8102E'%20d='M0%20193v96h640v-96H0zM273%200v480h96V0h-96z'/%3e%3c/svg%3e" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div class="progress-lb-wrap">
+																<label class="progress-label mb-0">United
+																	Kingdom</label>
+																<div class="d-flex align-items-center">
+																	<div
+																		class="progress progress-bar-rounded progress-bar-xs flex-1">
+																		<div class="progress-bar bg-primary w-30"
+																			role="progressbar" aria-valuenow="30"
+																			aria-valuemin="0" aria-valuemax="100"></div>
+																	</div>
+																	<div class="fs-8 mnw-30p ms-3">30%</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="media align-items-center mb-3">
+														<div class="media-head me-3">
+															<div class="avatar avatar-xxs avatar-rounded">
+																<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icon-css-au'%20viewBox='0%200%20640%20480'%3e%3cpath%20id='path617'%20fill='%23006'%20stroke-width='1.3'%20d='M0%200h640v480H0z'/%3e%3cpath%20id='path625'%20fill='%23fff'%20fill-rule='evenodd'%20stroke-width='1.3'%20d='M299.8%20392.5l-43.7%203.8%206%2043.4L232%20408l-30.1%2031.7%206-43.4-43.7-3.8%2037.7-22.3-24.3-36.5%2041%2015.5%2013.4-41.7%2013.5%2041.7%2041-15.5-24.3%2036.5m224.4%2062.3L476%20416.7l17.8%206.7%205.8-18.1%205.8%2018.1%2017.8-6.7-10.5%2015.8%2016.4%209.7-19%201.7%202.6%2018.9-13-13.9-13.2%2013.9%202.6-18.9-19-1.6m16.4-291.9L476%20134.6l17.8%206.7%205.8-18.1%205.8%2018.1%2017.8-6.7-10.5%2015.8%2016.4%209.8-19%201.6%202.6%2018.9-13-13.8-13.2%2013.7%202.6-18.8-19-1.6M380.8%20265l-10.5-15.8%2017.8%206.7%205.8-18.1%205.9%2018.1%2017.8-6.7L407%20265l16.4%209.7-19%201.7%202.7%2018.9-13.2-13.9-13%2013.9%202.5-18.9-19-1.6m216.3-38L570%20221l17.8%206.7%205.8-18.1%205.9%2018.1%2017.8-6.7-10.5%2015.8%2016.3%209.7-19%201.7%202.6%2018.8-13-13.8-13.2%2013.8%202.6-18.8-19-1.7M542%20320l-10.3%206.5%202.9-11.9-9.3-7.8%2012.1-1%204.6-11.2%204.7%2011.3%2012.1.9-9.3%207.8%202.9%2011.9'/%3e%3cpath%20id='path969'%20fill='%23006'%20stroke-width='.5'%20d='M0%200h320v240H0z'/%3e%3cpath%20id='path971'%20fill='%23fff'%20stroke-width='.5'%20d='M37.5%200l122%2090.5L281%200h39v31l-120%2089.5%20120%2089V240h-40l-120-89.5L40.5%20240H0v-30l119.5-89L0%2032V0z'/%3e%3cpath%20id='path973'%20fill='%23c8102e'%20stroke-width='.5'%20d='M212%20140.5L320%20220v20l-135.5-99.5zm-92%2010l3%2017.5-96%2072H0zM320%200v1.5l-124.5%2094%201-22L295%200zM0%200l119.5%2088h-30L0%2021z'/%3e%3cpath%20id='path975'%20fill='%23fff'%20stroke-width='.5'%20d='M120.5%200v240h80V0zM0%2080v80h320V80z'/%3e%3cpath%20id='path977'%20fill='%23c8102e'%20stroke-width='.5'%20d='M0%2096.5v48h320v-48zM136.5%200v240h48V0z'/%3e%3c/svg%3e" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div class="progress-lb-wrap">
+																<label class="progress-label mb-0">Australia</label>
+																<div class="d-flex align-items-center">
+																	<div
+																		class="progress progress-bar-rounded progress-bar-xs flex-1">
+																		<div class="progress-bar bg-grey-dark-2 w-15"
+																			role="progressbar" aria-valuenow="15"
+																			aria-valuemin="0" aria-valuemax="100"></div>
+																	</div>
+																	<div class="fs-8 mnw-30p ms-3">15%</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="media align-items-center">
+														<div class="media-head me-3">
+															<div class="avatar avatar-xxs avatar-rounded">
+																<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icon-css-ca'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fff'%20d='M81.1%200h362.3v512H81.1z'%20transform='translate(74.1)%20scale(.9375)'/%3e%3cpath%20fill='%23d52b1e'%20d='M-100%200H81.1v512H-100zm543.4%200h181.1v512h-181zm-308%20247.4l-14.2%204.8%2065.5%2057.5c5%2014.7-1.7%2019-6%2026.8l71-9L250%20399l14.8-.4-3.3-71%2071.2%208.5c-4.4-9.3-8.3-14.2-4.3-29l65.4-54.5-11.4-4.2c-9.4-7.2%204-34.7%206-52.1%200%200-38.1%2013.1-40.6%206.2l-9.8-18.7-34.7%2038.2c-3.8.9-5.4-.6-6.3-3.8l16-79.8-25.4%2014.3c-2.1%201-4.2.2-5.6-2.3l-24.5-49-25.2%2050.9c-1.9%201.8-3.8%202-5.4.8l-24.2-13.6%2014.6%2079.1c-1.2%203.2-4%204-7.2%202.3l-33.3-37.7c-4.3%207-7.2%2018.3-13%2020.9-5.7%202.4-25-4.8-37.9-7.6%204.4%2015.9%2018.2%2042.3%209.5%2051z'%20transform='translate(74.1)%20scale(.9375)'/%3e%3c/svg%3e" alt="user"
+																	class="avatar-img">
+															</div>
+														</div>
+														<div class="media-body">
+															<div class="progress-lb-wrap">
+																<label class="progress-label mb-0">Canada</label>
+																<div class="d-flex align-items-center">
+																	<div
+																		class="progress progress-bar-rounded progress-bar-xs flex-1">
+																		<div class="progress-bar bg-grey w-10"
+																			role="progressbar" aria-valuenow="10"
+																			aria-valuemin="0" aria-valuemax="100"></div>
+																	</div>
+																	<div class="fs-8 mnw-30p ms-3">10%</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 mb-md-4 mb-3">
+									<div class="card card-border mb-0 h-100">
+										<div class="card-header card-header-action">
+											<h6>New Customers
+												<span class="badge badge-sm badge-light ms-1">240</span>
+											</h6>
+											<div class="card-action-wrap">
+												<button class="btn btn-sm btn-outline-light"><span><span
+															class="icon"><span class="feather-icon"><i
+																	data-feather="upload"></i></span></span><span
+															class="btn-text">import</span></span></button>
+												<button class="btn btn-sm btn-primary ms-3"><span><span
+															class="icon"><span class="feather-icon"><i
+																	data-feather="plus"></i></span></span><span
+															class="btn-text">Add new</span></span></button>
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="contact-list-view">
+												<table id="datable_1" class="table nowrap w-100 mb-5">
+													<thead>
+														<tr>
+															<th><span class="form-check fs-6 mb-0">
+																	<input type="checkbox"
+																		class="form-check-input check-select-all"
+																		id="customCheck1">
+																	<label class="form-check-label"
+																		for="customCheck1"></label>
+																</span></th>
+															<th>Name</th>
+															<th class="w-25">Usage</th>
+															<th>Last Update</th>
+															<th>Tags</th>
+															<th></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+															</td>
+															<td>
+																<div class="media align-items-center">
+																	<div class="media-head me-2">
+																		<div class="avatar avatar-xs avatar-rounded">
+																			<img src="/assets/logo-avatar-1-D701dXKY.png"
+																				alt="user" class="avatar-img">
+																		</div>
+																	</div>
+																	<div class="media-body">
+																		<div class="text-high-em">Phone Pay</div>
+																		<div class="fs-7"><a href="#"
+																				class="table-link-text link-medium-em">phonepay.in</a>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="progress-lb-wrap">
+																	<div class="d-flex align-items-center">
+																		<div
+																			class="progress progress-bar-rounded progress-bar-xs flex-1">
+																			<div class="progress-bar bg-blue-dark-3 w-90"
+																				role="progressbar" aria-valuenow="90"
+																				aria-valuemin="0" aria-valuemax="100">
+																			</div>
+																		</div>
+																		<div class="fs-8 ms-3">90%</div>
+																	</div>
+																</div>
+															</td>
+															<td>10 June, 2022</td>
+															<td>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">admin</span>
+																<span
+																	class="badge badge-soft-secondary my-1  me-2">Finance</span>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Edit"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="edit-2"></i></span></span></a>
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Delete"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="trash"></i></span></span></a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															</td>
+															<td>
+																<div class="media align-items-center">
+																	<div class="media-head me-2">
+																		<div class="avatar avatar-xs avatar-rounded">
+																			<img src="/assets/logo-avatar-2-CaUkowRH.png"
+																				alt="user" class="avatar-img">
+																		</div>
+																	</div>
+																	<div class="media-body">
+																		<div class="text-high-em">Swiggy</div>
+																		<div class="fs-7"><a href="#"
+																				class="table-link-text link-medium-em">swiggy.com</a>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="progress-lb-wrap">
+																	<div class="d-flex align-items-center">
+																		<div
+																			class="progress progress-bar-rounded progress-bar-xs flex-1">
+																			<div class="progress-bar bg-blue w-75"
+																				role="progressbar" aria-valuenow="75"
+																				aria-valuemin="0" aria-valuemax="100">
+																			</div>
+																		</div>
+																		<div class="fs-8 ms-3">75%</div>
+																	</div>
+																</div>
+															</td>
+															<td>09 July, 2022</td>
+															<td>
+																<span
+																	class="badge badge-soft-secondary my-1  me-2">customer
+																	data</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">admin</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">+4</span>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Edit"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="edit-2"></i></span></span></a>
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Delete"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="trash"></i></span></span></a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															</td>
+															<td>
+																<div class="media align-items-center">
+																	<div class="media-head me-2">
+																		<div class="avatar avatar-xs avatar-rounded">
+																			<img src="/assets/logo-avatar-3-CIiWQl1u.png"
+																				alt="user" class="avatar-img">
+																		</div>
+																	</div>
+																	<div class="media-body">
+																		<div class="text-high-em">Coursera</div>
+																		<div class="fs-7"><a href="#"
+																				class="table-link-text link-medium-em">coursera.com</a>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="progress-lb-wrap">
+																	<div class="d-flex align-items-center">
+																		<div
+																			class="progress progress-bar-rounded progress-bar-xs flex-1">
+																			<div class="progress-bar bg-primary w-50"
+																				role="progressbar" aria-valuenow="50"
+																				aria-valuemin="0" aria-valuemax="100">
+																			</div>
+																		</div>
+																		<div class="fs-8 ms-3">50%</div>
+																	</div>
+																</div>
+															</td>
+															<td>24 Aug, 2022</td>
+															<td>
+																<span
+																	class="badge badge-soft-secondary my-1  me-2">education</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">admin</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">+3</span>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Edit"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="edit-2"></i></span></span></a>
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Delete"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="trash"></i></span></span></a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															</td>
+															<td>
+																<div class="media align-items-center">
+																	<div class="media-head me-2">
+																		<div class="avatar avatar-xs avatar-rounded">
+																			<img src="/assets/logo-avatar-4-BacSRUpz.png"
+																				alt="user" class="avatar-img">
+																		</div>
+																	</div>
+																	<div class="media-body">
+																		<div class="text-high-em">Tinder</div>
+																		<div class="fs-7"><a href="#"
+																				class="table-link-text link-medium-em">tinder.com</a>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="progress-lb-wrap">
+																	<div class="d-flex align-items-center">
+																		<div
+																			class="progress progress-bar-rounded progress-bar-xs flex-1">
+																			<div class="progress-bar bg-primary-dark-2 w-60"
+																				role="progressbar" aria-valuenow="60"
+																				aria-valuemin="0" aria-valuemax="100">
+																			</div>
+																		</div>
+																		<div class="fs-8 ms-3">60%</div>
+																	</div>
+																</div>
+															</td>
+															<td>17 May, 2022</td>
+															<td>
+																<span
+																	class="badge badge-soft-secondary my-1  me-2">Social</span>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Edit"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="edit-2"></i></span></span></a>
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Delete"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="trash"></i></span></span></a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															</td>
+															<td>
+																<div class="media align-items-center">
+																	<div class="media-head me-2">
+																		<div class="avatar avatar-xs avatar-rounded">
+																			<img src="/assets/logo-avatar-5-CsKvwLMq.png"
+																				alt="user" class="avatar-img">
+																		</div>
+																	</div>
+																	<div class="media-body">
+																		<div class="text-high-em">PCD</div>
+																		<div class="fs-7"><a href="#"
+																				class="table-link-text link-medium-em">pcdeals.com</a>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="progress-lb-wrap">
+																	<div class="d-flex align-items-center">
+																		<div
+																			class="progress progress-bar-rounded progress-bar-xs flex-1">
+																			<div class="progress-bar bg-grey w-30"
+																				role="progressbar" aria-valuenow="30"
+																				aria-valuemin="0" aria-valuemax="100">
+																			</div>
+																		</div>
+																		<div class="fs-8 ms-3">30%</div>
+																	</div>
+																</div>
+															</td>
+															<td>13 July, 2022</td>
+															<td>
+																<span
+																	class="badge badge-soft-secondary my-1  me-2">Portal</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">admin</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">+3</span>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Edit"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="edit-2"></i></span></span></a>
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Delete"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="trash"></i></span></span></a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+															</td>
+															<td>
+																<div class="media align-items-center">
+																	<div class="media-head me-2">
+																		<div class="avatar avatar-xs avatar-rounded">
+																			<img src="data:image/png;base64,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"
+																				alt="user" class="avatar-img">
+																		</div>
+																	</div>
+																	<div class="media-body">
+																		<div class="text-high-em">Icons 8</div>
+																		<div class="fs-7"><a href="#"
+																				class="table-link-text link-medium-em">icons8.com</a>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td>
+																<div class="progress-lb-wrap">
+																	<div class="d-flex align-items-center">
+																		<div
+																			class="progress progress-bar-rounded progress-bar-xs flex-1">
+																			<div class="progress-bar bg-green-dark-1 w-45"
+																				role="progressbar" aria-valuenow="45"
+																				aria-valuemin="0" aria-valuemax="100">
+																			</div>
+																		</div>
+																		<div class="fs-8 ms-3">45%</div>
+																	</div>
+																</div>
+															</td>
+															<td>14 July, 2022</td>
+															<td>
+																<span
+																	class="badge badge-soft-secondary my-1  me-2">Library</span>
+																<span
+																	class="badge badge-soft-secondary  my-1  me-2">Asset</span>
+															</td>
+															<td>
+																<div class="d-flex align-items-center">
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Edit"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="edit-2"></i></span></span></a>
+																	<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+																		data-bs-toggle="tooltip" data-placement="top"
+																		title="" data-bs-original-title="Delete"
+																		href="#"><span class="icon"><span
+																				class="feather-icon"><i
+																					data-feather="trash"></i></span></span></a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Page Body -->
+			</div>
+
+			<!-- Page Footer -->
+			<div class="hk-footer">
+				<footer class="container-xxl footer">
+					<div class="row">
+						<div class="col-xl-8">
+							<p class="footer-text"><span class="copy-text">Brightronix © 2023 All rights reserved.</span> <a
+									href="#" class="">Privacy Policy</a><span class="footer-link-sep">|</span><a
+									href="#" class="">T&C</a><span class="footer-link-sep">|</span><a href="#"
+									class="">System Status</a></p>
+						</div>
+						<div class="col-xl-4">
+							<a href="#" class="footer-extr-link link-default"><span class="feather-icon"><i
+										data-feather="external-link"></i></span><u>Send feedback to our help
+									forum</u></a>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<!-- / Page Footer -->
+
+		</div>
+		<!-- /Main Content -->
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Main JS -->
+
+</body>
+
+</html>

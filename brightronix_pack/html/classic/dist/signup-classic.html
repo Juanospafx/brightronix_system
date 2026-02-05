@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- 
+Brightronix
+Author: Hencework
+Contact: contact@hencework.com
+-->
+<html lang="en">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup Classic | Brightronix - Admin CRM Dashboard Template</title>
+	<meta name="description"
+		content="A modern CRM Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap." />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<script>
+		(function () {
+			const storedTheme = localStorage.getItem('theme') || 'light';
+			document.documentElement.setAttribute('data-bs-theme', storedTheme);
+		})();
+	</script>
+	<link rel='stylesheet' href='assets/css/style.css'>
+  <script type="module" crossorigin src="/assets/main-DJOcaV6B.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BUFSDVlQ.css">
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div class="hk-wrapper hk-pg-auth" data-footer="simple">
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper pt-0 pb-xl-0 pb-5">
+			<div class="hk-pg-body pt-0 pb-xl-0">
+				<!-- Container -->
+				<div class="container-xxl">
+					<!-- Row -->
+					<div class="row">
+						<div class="col-sm-10 position-relative mx-auto">
+							<div class="auth-content py-8">
+								<form class="w-100">
+									<div class="row">
+										<div class="col-xxl-5 col-xl-7 col-lg-8 col-sm-10 mx-auto">
+											<div class="text-center mb-7">
+												<a class="navbar-brand me-0" href="index.html">
+													<img class="brand-img d-inline-block img-light"
+														src="data:image/png;base64,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" alt="brand">
+													<img class="brand-img d-inline-block img-dark"
+														src="/assets/logo-dark-BoqepxiR.svg" alt="brand">
+												</a>
+											</div>
+											<div class="card card-border">
+												<div class="card-body">
+													<h4 class="text-center mb-0">Sign Up to Brightronix</h4>
+													<p class="p-xs mt-2 mb-4 text-center">Already a member ? <a
+															href="#"><u>Sign In</u></a></p>
+													<button
+														class="btn btn-outline-dark btn-rounded btn-block mb-3"><span><span
+																class="icon"><i
+																	class="fab fa-google"></i></span><span>Sign Up with
+																Gmail</span></span></button>
+													<button
+														class="btn btn-social btn-social-facebook btn-rounded btn-block"><span><span
+																class="icon"><i
+																	class="fab fa-facebook"></i></span><span>Sign Up
+																with Facebook</span></span></button>
+													<div class="title-sm title-wth-divider divider-center my-4">
+														<span>Or</span>
+													</div>
+													<div class="row gx-3">
+														<div class="form-group col-lg-6">
+															<label class="form-label">Name</label>
+															<input class="form-control" placeholder="Enter your name"
+																value="" type="text">
+														</div>
+														<div class="form-group col-lg-6">
+															<label class="form-label">Username</label>
+															<input class="form-control" placeholder="Enter username"
+																value="" type="text">
+														</div>
+														<div class="form-group col-lg-12">
+															<label class="form-label">Email</label>
+															<input class="form-control"
+																placeholder="Enter your email id" value="" type="text">
+														</div>
+														<div class="form-group col-lg-12">
+															<label class="form-label">Password</label>
+															<div class="input-group password-check">
+																<span class="input-affix-wrapper affix-wth-text">
+																	<input class="form-control"
+																		placeholder="6+ characters" value=""
+																		type="password">
+																	<a href="#"
+																		class="input-suffix text-primary text-uppercase fs-8 fw-medium">
+																		<span>Show</span>
+																		<span class="d-none">Hide</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="form-check form-check-sm mb-3">
+														<input type="checkbox" class="form-check-input" id="logged_in"
+															checked>
+														<label class="form-check-label text-muted fs-8"
+															for="logged_in">By creating an account you specify that you
+															have read and agree with our <a href="#">Tearms of use</a>
+															and <a href="#">Privacy policy</a>. We may keep you inform
+															about latest updates through our default <a
+																href="#">notification settings</a></label>
+													</div>
+													<a href="#"
+														class="btn btn-primary btn-rounded btn-uppercase btn-block">Create
+														account</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- /Row -->
+				</div>
+				<!-- /Container -->
+			</div>
+			<!-- /Page Body -->
+
+			<!-- Page Footer -->
+			<div class="hk-footer border-0">
+				<footer class="container-xxl footer">
+					<div class="row">
+						<div class="col-xl-8 text-center">
+							<p class="footer-text pb-0"><span class="copy-text">Brightronix © 2023 All rights
+									reserved.</span> <a href="#" class="">Privacy Policy</a><span
+									class="footer-link-sep">|</span><a href="#" class="">T&C</a><span
+									class="footer-link-sep">|</span><a href="#" class="">System Status</a></p>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<!-- / Page Footer -->
+
+		</div>
+		<!-- /Main Content -->
+	</div>
+	<!-- /Wrapper -->
+
+	<!-- Main JS -->
+</body>
+
+</html>

@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<!-- 
+Brightronix
+Author: Hencework
+Contact: contact@hencework.com
+-->
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrations | Brightronix - Admin CRM Dashboard Template</title>
+    <meta name="description" content="A modern CRM Dashboard Template with reusable and flexible components for your SaaS web applications by hencework. Based on Bootstrap."/>
+    
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<script>
+		(function () {
+			const storedTheme = localStorage.getItem('theme') || 'light';
+			document.documentElement.setAttribute('data-bs-theme', storedTheme);
+		})();
+	</script>
+	<link rel='stylesheet' href='assets/css/style.css'>
+  <script type="module" crossorigin src="/assets/main-DJOcaV6B.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BUFSDVlQ.css">
+</head>
+<body>
+   	<!-- Wrapper -->
+	<div class="hk-wrapper" data-layout="vertical" data-layout-style="collapsed" data-menu="light" data-footer="simple" data-hover="active">
+		<!-- Top Navbar -->
+		<nav class="hk-navbar navbar navbar-expand-xl navbar-light fixed-top">
+			<div class="container-fluid">
+				<!-- Start Nav -->
+				<div class="nav-start-wrap">
+					<button
+						class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle d-xl-none"><span
+							class="icon"><span class="feather-icon"><i
+									data-feather="align-left"></i></span></span></button>
+
+					<!-- Search -->
+					<form class="dropdown navbar-search">
+						<div class="dropdown-toggle no-caret" data-bs-toggle="dropdown" data-dropdown-animation
+							data-bs-auto-close="outside">
+							<a href="#"
+								class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover  d-xl-none"><span
+									class="icon"><span class="feather-icon"><i
+											data-feather="search"></i></span></span></a>
+							<div class="input-group d-xl-flex d-none">
+								<span class="input-affix-wrapper input-search affix-border">
+									<input type="text" class="form-control  bg-transparent"
+										data-navbar-search-close="false" placeholder="Search..." aria-label="Search">
+									<span class="input-suffix"><span>/</span>
+										<span class="btn-input-clear"><i class="bi bi-x-circle-fill"></i></span>
+										<span class="spinner-border spinner-border-sm input-loader text-primary"
+											role="status">
+											<span class="sr-only">Loading...</span>
+										</span>
+									</span>
+								</span>
+							</div>
+						</div>
+						<div class="dropdown-menu p-0">
+							<!-- Mobile Search -->
+							<div class="dropdown-item d-xl-none bg-transparent">
+								<div class="input-group mobile-search">
+									<span class="input-affix-wrapper input-search">
+										<input type="text" class="form-control" placeholder="Search..."
+											aria-label="Search">
+										<span class="input-suffix">
+											<span class="btn-input-clear"><i class="bi bi-x-circle-fill"></i></span>
+											<span class="spinner-border spinner-border-sm input-loader text-primary"
+												role="status">
+												<span class="sr-only">Loading...</span>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+							<!--/ Mobile Search -->
+							<div data-simplebar class="dropdown-body p-2">
+								<h6 class="dropdown-header">Recent Search
+								</h6>
+								<div class="dropdown-item bg-transparent">
+									<a href="#" class="badge badge-pill badge-soft-secondary">Grunt</a>
+									<a href="#" class="badge badge-pill badge-soft-secondary">Node JS</a>
+									<a href="#" class="badge badge-pill badge-soft-secondary">SCSS</a>
+								</div>
+								<div class="dropdown-divider"></div>
+								<h6 class="dropdown-header">Help
+								</h6>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+												<span class="initial-wrap">
+													<span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-corner-down-right"
+															width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+														</svg>
+													</span>
+												</span>
+											</div>
+										</div>
+										<div class="media-body">
+											How to setup theme?
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-icon avatar-xs avatar-soft-light avatar-rounded">
+												<span class="initial-wrap">
+													<span class="svg-icon">
+														<svg xmlns="http://www.w3.org/2000/svg"
+															class="icon icon-tabler icon-tabler-corner-down-right"
+															width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+															stroke="currentColor" fill="none" stroke-linecap="round"
+															stroke-linejoin="round">
+															<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+															<path d="M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4"></path>
+														</svg>
+													</span>
+												</span>
+											</div>
+										</div>
+										<div class="media-body">
+											View detail documentation
+										</div>
+									</div>
+								</a>
+								<div class="dropdown-divider"></div>
+								<h6 class="dropdown-header">Users
+								</h6>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-xs avatar-rounded">
+												<img src="/assets/avatar3-CedfJ5CS.jpg" alt="user" class="avatar-img">
+											</div>
+										</div>
+										<div class="media-body">
+											Sarah Jone
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-xs avatar-soft-primary avatar-rounded">
+												<span class="initial-wrap">J</span>
+											</div>
+										</div>
+										<div class="media-body">
+											Joe Jackson
+										</div>
+									</div>
+								</a>
+								<a href="javascript:void(0);" class="dropdown-item">
+									<div class="media align-items-center">
+										<div class="media-head me-2">
+											<div class="avatar avatar-xs avatar-rounded">
+												<img src="/assets/avatar4-BVYPq6rw.jpg" alt="user" class="avatar-img">
+											</div>
+										</div>
+										<div class="media-body">
+											Maria Richard
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="dropdown-footer d-xl-flex d-none"><a href="#"><u>Search all</u></a></div>
+						</div>
+					</form>
+					<!-- /Search -->
+				</div>
+				<!-- /Start Nav -->
+
+				<!-- End Nav -->
+				<div class="nav-end-wrap">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item">
+							<button id="theme-toggle" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover">
+								<span class="icon">
+									<span class=" position-relative">
+										<span id="icon-sun" class="feather-icon d-none">
+											<i data-feather="sun"></i>
+										</span>
+										<span id="icon-moon" class="feather-icon">
+											<i data-feather="moon"></i>
+										</span>
+									</span>
+								</span>
+							</button>
+						</li>
+						<li class="nav-item">
+							<a href="email.html" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover"><span
+									class="icon"><span class=" position-relative"><span class="feather-icon"><i
+												data-feather="inbox"></i></span><span
+											class="badge badge-sm badge-soft-primary badge-sm badge-pill position-top-end-overflow-1">4</span></span></span></a>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown dropdown-notifications">
+								<a href="#"
+									class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover dropdown-toggle no-caret"
+									data-bs-toggle="dropdown" data-dropdown-animation role="button" aria-haspopup="true"
+									aria-expanded="false"><span class="icon"><span class="position-relative"><span
+												class="feather-icon"><i data-feather="bell"></i></span><span
+												class="badge badge-success badge-indicator position-top-end-overflow-1"></span></span></span></a>
+								<div class="dropdown-menu dropdown-menu-end p-0">
+									<h6 class="dropdown-header px-4 fs-6">Notifications<a href="#"
+											class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"><span
+												class="icon"><span class="feather-icon"><i
+														data-feather="settings"></i></span></span></a>
+									</h6>
+									<div data-simplebar class="dropdown-body  p-2">
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div class="avatar avatar-rounded avatar-sm">
+														<img src="/assets/avatar2-DNgzPhPs.jpg" alt="user"
+															class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Morgan Freeman accepted your
+															invitation to join the team</div>
+														<div class="notifications-info">
+															<span class="badge badge-soft-success">Collaboration</span>
+															<div class="notifications-time">Today, 10:14 PM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div
+														class="avatar  avatar-icon avatar-sm avatar-success avatar-rounded">
+														<span class="initial-wrap">
+															<span class="feather-icon"><i
+																	data-feather="inbox"></i></span>
+														</span>
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">New message received from Alan
+															Rickman</div>
+														<div class="notifications-info">
+															<div class="notifications-time">Today, 7:51 AM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div
+														class="avatar  avatar-icon avatar-sm avatar-pink avatar-rounded">
+														<span class="initial-wrap">
+															<span class="feather-icon"><i
+																	data-feather="clock"></i></span>
+														</span>
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">You have a follow up with
+															Brightronix Head on Friday, Dec 19 at 9:30 am</div>
+														<div class="notifications-info">
+															<div class="notifications-time">Yesterday, 9:25 PM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div class="avatar avatar-sm avatar-rounded">
+														<img src="/assets/avatar3-CedfJ5CS.jpg" alt="user"
+															class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Application of Sarah Williams is
+															waiting for your approval</div>
+														<div class="notifications-info">
+															<div class="notifications-time">Today 10:14 PM</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div class="avatar avatar-sm avatar-rounded">
+														<img src="/assets/avatar10-BP8Yl5NQ.jpg" alt="user"
+															class="avatar-img">
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Winston Churchil shared a
+															document with you</div>
+														<div class="notifications-info">
+															<span class="badge badge-soft-violet">File Manager</span>
+															<div class="notifications-time">2 Oct, 2021</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0);" class="dropdown-item">
+											<div class="media">
+												<div class="media-head">
+													<div
+														class="avatar  avatar-icon avatar-sm avatar-danger avatar-rounded">
+														<span class="initial-wrap">
+															<span class="feather-icon"><i
+																	data-feather="calendar"></i></span>
+														</span>
+													</div>
+												</div>
+												<div class="media-body">
+													<div>
+														<div class="notifications-text">Last 2 days left for the project
+															to be completed</div>
+														<div class="notifications-info">
+															<span class="badge badge-soft-orange">Updates</span>
+															<div class="notifications-time">14 Sep, 2021</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-footer"><a href="#"><u>View all notifications</u></a></div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown ps-2">
+								<a class=" dropdown-toggle no-caret" href="#" role="button" data-bs-display="static"
+									data-bs-toggle="dropdown" data-dropdown-animation data-bs-auto-close="outside"
+									aria-expanded="false">
+									<div class="avatar avatar-rounded avatar-xs">
+										<img src="/assets/avatar12-Bc1-QUW6.jpg" alt="user" class="avatar-img">
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<div class="p-2">
+										<div class="media">
+											<div class="media-head me-2">
+												<div class="avatar avatar-primary avatar-sm avatar-rounded">
+													<span class="initial-wrap">Hk</span>
+												</div>
+											</div>
+											<div class="media-body">
+												<div class="dropdown">
+													<a href="#" class="d-block dropdown-toggle link-dark fw-medium"
+														data-bs-toggle="dropdown" data-dropdown-animation
+														data-bs-auto-close="inside">Hencework</a>
+													<div class="dropdown-menu dropdown-menu-end">
+														<div class="p-2">
+															<div class="media align-items-center active-user mb-3">
+																<div class="media-head me-2">
+																	<div
+																		class="avatar avatar-primary avatar-xs avatar-rounded">
+																		<span class="initial-wrap">Hk</span>
+																	</div>
+																</div>
+																<div class="media-body">
+																	<a href="#"
+																		class="d-flex align-items-center link-dark">Hencework
+																		<i
+																			class="ri-checkbox-circle-fill fs-7 text-primary ms-1"></i></a>
+																	<a href="#"
+																		class="d-block fs-8 link-secondary"><u>Manage
+																			your account</u></a>
+																</div>
+															</div>
+															<div class="media align-items-center mb-3">
+																<div class="media-head me-2">
+																	<div class="avatar avatar-xs avatar-rounded">
+																		<img src="/assets/avatar12-Bc1-QUW6.jpg"
+																			alt="user" class="avatar-img">
+																	</div>
+																</div>
+																<div class="media-body">
+																	<a href="#" class="d-block link-dark">Brightronix
+																		Team</a>
+																	<a href="#"
+																		class="d-block fs-8 link-secondary">contact@hencework.com</a>
+																</div>
+															</div>
+															<button class="btn btn-block btn-outline-light btn-sm">
+																<span><span class="icon"><span class="feather-icon"><i
+																				data-feather="plus"></i></span></span>
+																	<span>Add Account</span></span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="fs-7">contact@hencework.com</div>
+												<a href="#" class="d-block fs-8 link-secondary"><u>Sign Out</u></a>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="profile.html">Profile</a>
+									<a class="dropdown-item" href="#"><span class="me-2">Offers</span><span
+											class="badge badge-sm badge-soft-pink">2</span></a>
+									<div class="dropdown-divider"></div>
+									<h6 class="dropdown-header">Manage Account</h6>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="credit-card"></i></span><span>Payment methods</span></a>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="check-square"></i></span><span>Subscriptions</span></a>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="settings"></i></span><span>Settings</span></a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><span class="dropdown-icon feather-icon"><i
+												data-feather="tag"></i></span><span>Raise a ticket</span></a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Terms & Conditions</a>
+									<a class="dropdown-item" href="#">Help & Support</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /End Nav -->
+			</div>
+		</nav>
+		<!-- /Top Navbar -->
+
+        <!-- Vertical Nav -->
+        <div class="hk-menu">
+			<!-- Brand -->
+			<div class="menu-header">
+				<span>
+					<a class="navbar-brand" href="index.html">
+						<img class="brand-img img-fluid" src="data:image/svg+xml,%3csvg%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16%2032C7.16344%2032%20-1.08564e-06%2024.8366%20-6.99382e-07%2016C-3.13124e-07%207.16344%207.16344%20-1.08564e-06%2016%20-6.99382e-07C24.8366%20-3.13124e-07%2032%207.16344%2032%2016C32%2024.8366%2024.8366%2032%2016%2032ZM16%207.6375C11.3815%207.6375%207.6375%2011.3815%207.6375%2016C7.6375%2020.6185%2011.3815%2024.3625%2016%2024.3625C20.6185%2024.3625%2024.3625%2020.6185%2024.3625%2016C24.3625%2011.3815%2020.6185%207.6375%2016%207.6375Z'%20fill='url(%23paint0_linear_504_22)'/%3e%3cpath%20d='M16%201.90798e-07C18.5445%202.21141e-07%2021.0524%200.60688%2023.3154%201.77027C25.5784%202.93366%2027.5313%204.62001%2029.012%206.68935C30.4927%208.75869%2031.4585%2011.1513%2031.8292%2013.6687C32.2%2016.1861%2031.965%2018.7556%2031.1438%2021.164C30.3225%2023.5723%2028.9387%2025.7501%2027.1072%2027.5165C25.2757%2029.2829%2023.0493%2030.5871%2020.6128%2031.3206C18.1763%2032.0542%2015.6%2032.1961%2013.0977%2031.7346C10.5953%2031.273%208.23919%2030.2213%206.22476%2028.6667L10.8961%2022.6136C11.9479%2023.4253%2013.1781%2023.9744%2014.4846%2024.2154C15.7911%2024.4564%2017.1363%2024.3823%2018.4085%2023.9993C19.6806%2023.6163%2020.8431%2022.9354%2021.7994%2022.0131C22.7556%2021.0908%2023.4782%2019.9537%2023.9069%2018.6962C24.3357%2017.4388%2024.4584%2016.0972%2024.2649%2014.7828C24.0713%2013.4684%2023.567%2012.2191%2022.7939%2011.1387C22.0208%2010.0582%2021.0011%209.17773%2019.8195%208.57029C18.638%207.96286%2017.3286%207.64599%2016%207.64599L16%201.90798e-07Z'%20fill='url(%23paint1_linear_504_22)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_504_22'%20x1='32'%20y1='16'%20x2='-6.99382e-07'%20y2='16'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23D0F8EE'/%3e%3cstop%20offset='1'%20stop-color='%2325CBA1'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_504_22'%20x1='8.63878'%20y1='34.8593'%20x2='28.1673'%20y2='1.76426'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%2349D4B1'/%3e%3cstop%20offset='0.779417'%20stop-color='%2315715A'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="brand" />
+						<img id="logo-dark" class="brand-img img-fluid d-none ms-3"
+							src="/src/assets/img/Brightronix-dark.svg" alt="brand" />
+						<img id="logo-light" class="brand-img img-fluid" src="/src/assets/img/Brightronix.svg"
+							alt="brand" />
+					</a>
+					<button class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover navbar-toggle">
+						<span class="icon">
+							<span class="svg-icon fs-5">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<line x1="10" y1="12" x2="20" y2="12"></line>
+									<line x1="10" y1="12" x2="14" y2="16"></line>
+									<line x1="10" y1="12" x2="14" y2="8"></line>
+									<line x1="4" y1="4" x2="4" y2="20"></line>
+								</svg>
+							</span>
+						</span>
+					</button>
+				</span>
+			</div>
+			<!-- /Brand -->
+
+			<!-- Main Menu -->
+			<div data-simplebar class="nicescroll-bar">
+				<div class="menu-content-wrap">
+					<div class="menu-group">
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-template" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<rect x="4" y="4" width="16" height="4" rx="1" />
+												<rect x="4" y="12" width="6" height="8" rx="1" />
+												<line x1="14" y1="12" x2="20" y2="12" />
+												<line x1="14" y1="16" x2="20" y2="16" />
+												<line x1="14" y1="20" x2="20" y2="20" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Dashboard</span>
+									<span class="badge badge-sm badge-soft-pink ms-auto">Hot</span>
+								</a>
+							</li>
+						</ul>	
+					</div>
+					<div class="menu-gap"></div>
+					<div class="menu-group">
+						<div class="nav-header">
+							<span>Apps</span>
+						</div>
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chat">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+												<line x1="12" y1="11" x2="12" y2="11.01" />
+												<line x1="8" y1="11" x2="8" y2="11.01" />
+												<line x1="16" y1="11" x2="16" y2="11.01" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Chat</span>
+								</a>
+								<ul id="dash_chat" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="chats.html"><span class="nav-link-text">Chats</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chats-group.html"><span class="nav-link-text">Groups</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chats-contact.html"><span class="nav-link-text">Contacts</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>	
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_chatpop">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+												<line x1="12" y1="12" x2="12" y2="12.01" />
+												<line x1="8" y1="12" x2="8" y2="12.01" />
+												<line x1="16" y1="12" x2="16" y2="12.01" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Chat Popup</span>
+								</a>
+								<ul id="dash_chatpop" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="chatpopup.html"><span class="nav-link-text">Direct Message</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="chatbot.html"><span class="nav-link-text">Chatbot</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>	
+							<li class="nav-item">
+								<a class="nav-link" href="calendar.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+												<circle cx="18" cy="18" r="4" />
+												<path d="M15 3v4" />
+												<path d="M7 3v4" />
+												<path d="M3 11h16" />
+												<path d="M18 16.496v1.504l1 1" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Calendar</span>
+								</a>
+							</li>	
+							<li class="nav-item">
+								<a class="nav-link" href="email.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-inbox" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<rect x="4" y="4" width="16" height="16" rx="2" />
+												<path d="M4 13h3l3 3h4l3 -3h3" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Email</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_scrumboard">
+									<span class="nav-icon-wrap position-relative">
+										<span class="badge badge-sm badge-primary badge-sm badge-pill position-top-end-overflow">3</span>
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-kanban" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<line x1="4" y1="4" x2="10" y2="4" />
+												<line x1="14" y1="4" x2="20" y2="4" />
+												<rect x="4" y="8" width="6" height="12" rx="2" />
+												<rect x="14" y="8" width="6" height="6" rx="2" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Scrumboard</span>
+								</a>
+								<ul id="dash_scrumboard" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="projects-board.html"><span class="nav-link-text">All Boards</span></a>
+											</li>
+											
+											<li class="nav-item">
+												<a class="nav-link" href="kanban-board.html"><span class="nav-link-text">Project Kanban</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="pipeline.html"><span class="nav-link-text">Pipeline Kanban</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_contact">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />
+												<line x1="13" y1="8" x2="15" y2="8" />
+												<line x1="13" y1="12" x2="15" y2="12" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Contact</span>
+								</a>
+								<ul id="dash_contact" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="contact.html"><span class="nav-link-text">Contact List</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="contact-cards.html"><span class="nav-link-text">Contact Cards</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="edit-contact.html"><span class="nav-link-text">Edit Contact</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_file">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+												<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+												<path d="M9 15l2 2l4 -4" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">File Manager</span>
+								</a>
+								<ul id="dash_file" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="file-manager-list.html"><span class="nav-link-text">List View</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="file-manager-grid.html"><span class="nav-link-text">Grid View</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="gallery.html">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<line x1="15" y1="8" x2="15.01" y2="8" />
+												<rect x="4" y="4" width="16" height="16" rx="3" />
+												<path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+												<path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Gallery</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_task">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-details" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M13 5h8" />
+												<path d="M13 9h5" />
+												<path d="M13 15h8" />
+												<path d="M13 19h5" />
+												<rect x="3" y="4" width="6" height="6" rx="1" />
+												<rect x="3" y="14" width="6" height="6" rx="1" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Todo</span>
+									<span class="badge badge-soft-success ms-2">2</span>
+								</a>
+								<ul id="dash_task" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="tasklist.html"><span class="nav-link-text">Tasklist</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="gantt.html"><span class="nav-link-text">Gantt</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_blog">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<rect x="4" y="4" width="16" height="16" rx="1" />
+												<line x1="4" y1="8" x2="20" y2="8" />
+												<line x1="8" y1="4" x2="8" y2="8" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Blog</span>
+								</a>
+								<ul id="dash_blog" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="posts.html"><span class="nav-link-text">Posts</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="add-new-post.html"><span class="nav-link-text">Add New Post</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="post-detail.html"><span class="nav-link-text">Post Detail</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_invoice">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-digit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+												<rect x="9" y="12" width="3" height="5" rx="1" />
+												<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+												<path d="M15 12v5" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Invoices</span>
+								</a>
+								<ul id="dash_invoice" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="invoice-list.html"><span class="nav-link-text">Invoice List</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="invoice-templates.html"><span class="nav-link-text">Invoice Templates</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="create-invoice.html"><span class="nav-link-text">Create Invoice</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="invoice-preview.html"><span class="nav-link-text">Invoice Preview</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_integ">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<polyline points="7 8 3 12 7 16" />
+												<polyline points="17 8 21 12 17 16" />
+												<line x1="14" y1="4" x2="10" y2="20" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Integrations</span>
+								</a>
+								<ul id="dash_integ" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="all-apps.html"><span class="nav-link-text">All Apps</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="integrations-detail.html"><span class="nav-link-text">App Detail</span></a>
+											</li>
+											<li class="nav-item active">
+												<a class="nav-link" href="integrations.html"><span class="nav-link-text">Integrations</span></a>
+											</li>
+										</ul>	
+									</li>	
+								</ul>	
+							</li>
+						</ul>
+					</div>
+					<div class="menu-gap"></div>
+					<div class="menu-group">
+						<div class="nav-header">
+							<span>Pages</span>
+						</div>
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_pages">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<circle cx="9" cy="7" r="4" />
+												<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+												<path d="M16 11h6m-3 -3v6" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Authentication</span>
+								</a>
+								<ul id="dash_pages" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_log">
+													<span class="nav-link-text">Log In</span> 
+												</a>
+												<ul id="dash_log" class="nav flex-column collapse  nav-children">
+													<li class="nav-item">
+														<ul class="nav flex-column">
+															<li class="nav-item">
+																<a class="nav-link" href="login.html"><span class="nav-link-text">Login</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="login-simple.html"><span class="nav-link-text">Login Simple</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="login-classic.html"><span class="nav-link-text">Login Classic</span></a>
+															</li>
+														</ul>	
+													</li>	
+												</ul>	
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_sign">
+													<span class="nav-link-text">Sign Up</span>
+												</a>
+												<ul id="dash_sign" class="nav flex-column collapse  nav-children">
+													<li class="nav-item">
+														<ul class="nav flex-column">
+															<li class="nav-item">
+																<a class="nav-link" href="signup.html"><span class="nav-link-text">Signup</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="signup-simple.html"><span class="nav-link-text">Signup Simple</span></a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" href="signup-classic.html"><span class="nav-link-text">Signup Classic</span></a>
+															</li>
+														</ul>		
+													</li>	
+												</ul>	
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="lock-screen.html"><span class="nav-link-text">Lock Screen</span></a>
+											</li>
+											
+											<li class="nav-item">
+												<a class="nav-link" href="reset-password.html"><span class="nav-link-text">Reset Password</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="404.html"><span class="nav-link-text">Error 404</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="503.html"><span class="nav-link-text">Error 503</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#dash_profile">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<circle cx="12" cy="7" r="4" />
+												<path d="M6 21v-2a4 4 0 0 1 4 -4h1" />
+												<circle cx="16.5" cy="17.5" r="2.5" />
+												<path d="M18.5 19.5l2.5 2.5" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text position-relative">Profile
+										<span class="badge badge-danger badge-indicator position-absolute top-0 start-100"></span>
+									</span>
+								</a>
+								<ul id="dash_profile" class="nav flex-column collapse  nav-children">
+									<li class="nav-item">
+										<ul class="nav flex-column">
+											<li class="nav-item">
+												<a class="nav-link" href="profile.html">
+													<span class="nav-link-text">Profile</span>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="edit-profile.html">
+													<span class="nav-link-text">Edit Profile</span>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="account.html">
+													<span class="nav-link-text">Account</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-gap"></div>
+					<div class="menu-group">
+						<div class="nav-header">
+							<span>Documentation</span>
+						</div>
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="https://Brightronix.hencework.com/documentation/introduction " >
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<path d="M10 12h-1v5h1" />
+												<path d="M14 12h1v5h-1" />
+												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+												<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Documentation</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://Brightronix.hencework.com/documentation/avatar " >
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+												<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+												<rect x="4" y="4" width="6" height="5" rx="2" />
+												<rect x="4" y="13" width="6" height="7" rx="2" />
+												<rect x="14" y="4" width="6" height="16" rx="2" />
+											</svg>
+										</span>
+									</span>
+									<span class="nav-link-text">Components</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="callout card card-flush bg-orange-light-5 text-center mt-5 w-220p mx-auto">
+						<div class="card-body">
+							<h5 class="h5">Quickly Build Applications</h5>
+							<p class="p-sm card-text">Exclusively for webapps Based on Bootstrap</p>
+							<a href="https://Brightronix.hencework.com/documentation/introduction "  class="btn btn-primary btn-block">Go Brightronix Doc</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Main Menu -->
+		</div>
+        <div id="hk_menu_backdrop" class="hk-menu-backdrop"></div>
+        <!-- /Vertical Nav -->
+
+		<!-- Main Content -->
+		<div class="hk-pg-wrapper pb-0">
+			<div class="hk-pg-body py-0">
+				<div class="integrationsapp-wrap">
+					<nav class="integrationsapp-sidebar">
+						<div data-simplebar class="nicescroll-bar">
+							<div class="menu-content-wrap">
+								<form class="mb-4" role="search">
+									<input type="text" class="form-control" placeholder="Search by categories, name">
+								</form>
+								<div class="menu-group">
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item active">
+											<a class="nav-link" href="integrations.html">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="box"></i></span></span>
+												<span class="nav-link-text">Integrations</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="refresh-cw"></i></span></span>
+												<span class="nav-link-text">Updates</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu-gap"></div>
+								<div class="nav-header">
+									<span>Browse</span>
+								</div>
+								<div class="menu-group">
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="all-apps.html">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="grid"></i></span></span>
+												<span class="nav-link-text">All Apps</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="heart"></i></span></span>
+												<span class="nav-link-text">Popular</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="zap"></i></span></span>
+												<span class="nav-link-text">New Apps</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="check-square"></i></span></span>
+												<span class="nav-link-text">Recommended for you</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="git-branch"></i></span></span>
+												<span class="nav-link-text">Developer Tools</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu-gap"></div>
+								<div class="nav-header">
+									<span>Categories</span>
+								</div>
+								<div class="menu-group">
+									<ul class="nav nav-light navbar-nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="pen-tool"></i></span></span>
+												<span class="nav-link-text">Design</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="github"></i></span></span>
+												<span class="nav-link-text">Marketing</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="code"></i></span></span>
+												<span class="nav-link-text">Technology</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="zap"></i></span></span>
+												<span class="nav-link-text">API</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="tool"></i></span></span>
+												<span class="nav-link-text">SEO Tools</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="javascript:void(0);">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="briefcase"></i></span></span>
+												<span class="nav-link-text">Management</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--Sidebar Fixnav-->
+						<div class="integrationsapp-fixednav">
+							<div class="hk-toolbar">
+								<ul class="nav nav-light">
+									<li class="nav-item nav-link">
+										<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Settings" href="#"><span class="icon"><span class="feather-icon"><i data-feather="settings"></i></span></span></a>
+									</li>
+									<li class="nav-item nav-link">
+										<a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Archive"><span class="icon"><span class="feather-icon"><i data-feather="archive"></i></span></span></a>
+									</li>
+									<li class="nav-item nav-link">
+										<a href="#" class="btn btn-icon btn-rounded btn-flush-dark flush-soft-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Help"><span class="icon"><span class="feather-icon"><i data-feather="book"></i></span></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--/ Sidebar Fixnav-->
+					</nav>
+					<div class="integrationsapp-content">
+						<div class="integrationsapp-detail-wrap">
+							<header class="integrations-header">
+								<div class="d-flex flex-1">
+									<a class="integrationsapp-title">
+										<h1>Integrations</h1>
+									</a>
+									<select class="form-select d-md-none mw-300p ms-3">
+										<option selected="">All Integrations</option>
+										<option value="1">Native Integrations</option>
+									</select>
+								</div>
+								
+								<div class="h-100 d-md-flex d-none">
+									<ul class="nav nav-line nav-tabs nav-icon nav-light flex-shrink-0 px-2">
+										<li class="nav-item">
+											<a class="d-flex align-items-center h-100 nav-link active" data-bs-toggle="tab" href="#">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="check-square"></i></span></span>
+												<span class="nav-link-text">All Integrations</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="d-flex align-items-center h-100 nav-link" data-bs-toggle="tab" href="#">
+												<span class="nav-icon-wrap"><span class="feather-icon"><i data-feather="globe"></i></span></span>
+												<span class="nav-link-text">Native Integrations</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="integrations-options-wrap justify-content-end flex-1 d-md-flex d-none">	
+									<form class="mw-300p flex-grow-1 d-lg-flex d-none" role="search">
+										<input type="text" class="form-control" placeholder="Search by categories, name, tag">
+									</form>
+									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Collapse">
+										<span class="icon">
+											<span class="feather-icon"><i data-feather="chevron-up"></i></span>
+											<span class="feather-icon d-none"><i data-feather="chevron-down"></i></span>
+										</span>
+									</a>
+								</div>
+								<div class="hk-sidebar-togglable"></div>
+							</header>
+							<div class="integrations-body">
+								<div data-simplebar class="nicescroll-bar">
+									<div class="container mt-md-7 mt-3">
+										<div class="row">
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-14-pijap9i2.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Intercom</div>
+														<p class="p-sm multine-ellipsis">Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-2-C3Jd_mfx.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-primary flex-grow-0 flex-shrink-0 flex-basis-0">connected</a>
+														</div>
+														<div class="app-name">Swiggy</div>
+														<p class="p-sm multine-ellipsis">Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Dictum fusce ut placerat orci. Semper viverra nam libero justo laoreet sit amet.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-10-C0xNZafu.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Medium</div>
+														<p class="p-sm multine-ellipsis">Purus viverra accumsan in nisl nisi scelerisque. Quam vulputate dignissim suspendisse in est ante. Est ultricies integer quis auctor elit sed.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-12-_lhZFtji.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-primary flex-grow-0 flex-shrink-0 flex-basis-0">connected</a>
+														</div>
+														<div class="app-name">Figma</div>
+														<p class="p-sm multine-ellipsis">Viverra nam libero justo laoreet sit amet cursus sit amet. Faucibus vitae aliquet nec ullamcorper.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-9-D-3oUtH7.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-primary flex-grow-0 flex-shrink-0 flex-basis-0">connected</a>
+														</div>
+														<div class="app-name">Propswala</div>
+														<p class="p-sm multine-ellipsis">Ac ut consequat semper viverra nam libero justo laoreet sit. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="data:image/png;base64,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" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-primary flex-grow-0 flex-shrink-0 flex-basis-0">connected</a>
+														</div>
+														<div class="app-name">Icons8</div>
+														<p class="p-sm multine-ellipsis">Laoreet suspendisse interdum consectetur libero id faucibus. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-6-B0BNaxxo.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Behance</div>
+														<p class="p-sm multine-ellipsis">Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Elit at imperdiet dui accumsan sit. Condimentum lacinia.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-10-C0xNZafu.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Medium</div>
+														<p class="p-sm multine-ellipsis">Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-11-B9LHVEGG.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Node Js</div>
+														<p class="p-sm multine-ellipsis">Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Dictum fusce ut placerat orci. Semper viverra nam libero justo laoreet sit amet. </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-8-DeKE4UHM.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Indian Type Factory</div>
+														<p class="p-sm multine-ellipsis">Purus viverra accumsan in nisl nisi scelerisque. Quam vulputate dignissim suspendisse in est ante. Est ultricies integer quis auctor elit sed. </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-5-CTg9gPmS.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-primary flex-grow-0 flex-shrink-0 flex-basis-0">connected</a>
+														</div>
+														<div class="app-name">City Deals</div>
+														<p class="p-sm multine-ellipsis">Viverra nam libero justo laoreet sit amet cursus sit amet. Faucibus vitae aliquet nec ullamcorper. </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-xxl-3 col-xl-4 col-md-6">
+												<div class="card card-border card-int mb-4">
+													<div class="card-body">
+														<div class="d-flex justify-content-between align-items-start mb-3">
+															<div class="avatar avatar-sm avatar-logo">
+																<span class="initial-wrap">
+																	<img src="/assets/symbol-avatar-13-B7jfWOIe.png" alt="logo">
+																</span>
+															</div>
+															<a href="#" class="btn btn-block btn-outline-secondary flex-grow-0 flex-shrink-0 flex-basis-0">connect</a>
+														</div>
+														<div class="app-name">Sketch</div>
+														<p class="p-sm multine-ellipsis">Id diam maecenas ultricies mi eget mauris. At consectetur lorem donec massa sapien faucibus et.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Page Body -->
+		</div>
+		<!-- /Main Content -->
+	</div>
+    <!-- /Wrapper -->
+
+	<!-- Main JS -->
+</body>
+</html>
